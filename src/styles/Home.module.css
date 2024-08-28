@@ -1,0 +1,148 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    padding: 20px;
+    /* Add padding to prevent edges from touching the screen */
+}
+
+.card {
+    text-align: center;
+    padding: 5%;
+    /* Changed to percentage to adapt to screen size */
+    background-color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 500px;
+    /* Set a max-width to ensure the card doesn't stretch too wide */
+}
+
+.input {
+    width: 100%;
+    margin-bottom: 13px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 1rem;
+    /* Use rem for scalable font size */
+    color: #333;
+}
+
+.input::placeholder {
+    color: #666;
+}
+
+.welcome {
+    font-size: 3em;
+    /* Adjusted for smaller screens */
+    font-weight: bold;
+    color: #444;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.subtitle {
+    font-size: 1.2em;
+    color: #555;
+    margin-bottom: 30px;
+}
+
+.selectBox {
+    margin-top: 20px;
+}
+
+.select {
+    padding: 10px;
+    font-size: 1rem;
+    /* Consistent font size */
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background-color: #e0e0e0;
+    color: #333;
+    width: 100%;
+    max-width: 300px;
+}
+
+.miniDialog {
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    width: 90%;
+    /* Adjust to fit smaller screens */
+    max-width: 300px;
+    margin-top: 20px;
+}
+
+.dropdownLabel {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.backButton,
+.submitButton {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    margin-top: 10px;
+}
+
+.backButton {
+    background-color: #ccc;
+}
+
+.backButton:hover {
+    background-color: #bbb;
+}
+
+.submitButton {
+    background-color: #0070f3;
+    color: #fff;
+    margin-left: 10px;
+}
+
+.submitButton:hover {
+    background-color: #005bb5;
+}
+
+.errorMessage {
+    color: red;
+    margin-top: 10px;
+}
+
+/* Media Queries for Smaller Screens */
+@media (max-width: 768px) {
+    .welcome {
+        font-size: 2em;
+        /* Smaller font size on tablets */
+    }
+
+    .subtitle {
+        font-size: 1em;
+        /* Adjust subtitle size */
+    }
+
+    .card {
+        padding: 20px;
+        /* Reduce padding on smaller screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .welcome {
+        font-size: 1.5em;
+    }
+
+    .backButton,
+    .submitButton {
+        font-size: 0.9em;
+        padding: 8px 15px;
+    }
+}

@@ -1,0 +1,293 @@
+/* LecturerPage.module.css */
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    margin: 25px auto;
+    box-sizing: border-box;
+}
+
+.header {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+.upperSection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.lecturerInfo {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.label {
+    font-size: 16px;
+    margin-left: 25px;
+    font-weight: bold;
+    margin-bottom: 2px;
+}
+
+.Lecturerinput {
+    text-align: center;
+    height: 40px;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 50%;
+    cursor: not-allowed;
+    pointer-events: none;
+}
+
+.picSection {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic {
+    width: 120px;
+    height: 120px;
+    background-color: #ddd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: #555;
+}
+
+.middleSection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.button {
+    flex: 1;
+    height: 40px;
+    margin: 0 5px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.statusSection {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.statusItem {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 0 5px;
+}
+
+.textBox {
+    height: 30px;
+    padding: 5px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    background-color: #f0f0f0;
+    width: 80%;
+    margin-top: 5px;
+    cursor: not-allowed;
+    pointer-events: none;
+    text-align: center;
+}
+
+.tableContainer {
+    margin-top: 20px;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #efefef;
+}
+
+.tableWrapper {
+    max-height: 300px;
+    overflow-y: scroll;
+    position: relative;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: center;
+    min-width: 600px;
+}
+
+.tableHeader {
+    padding: 10px;
+    background-color: #ddd;
+    font-weight: bold;
+    border: 1px solid #ccc;
+    position: sticky;
+    top: 0;
+    z-index: 2;
+
+}
+
+.tableCell {
+    padding: 10px;
+    border: 1px solid #ccc;
+}
+
+.bottomSection {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.bottomButton {
+    height: 40px;
+    margin: 4px 5px;
+    background-color: #e0e0e0;
+    border: none;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 0 14px;
+}
+
+.menuOverlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+    /* Ensure the overlay is above other elements */
+}
+
+.menu {
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 200px;
+    max-height: 300px;
+    overflow-y: auto;
+    z-index: 1001;
+}
+
+.menuItem {
+    background-color: #D9D9D9;
+    padding: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* ConfirmationDialog.module.css */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.dialog {
+    width: 287px;
+    height: 202px;
+    background-color: white;
+    border-radius: 9px;
+    border: 3px solid rgba(0, 0, 0, 0.3);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.message {
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+    padding-top: 20px;
+}
+
+.buttonContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.noButton,
+.yesButton {
+    width: 105px;
+    height: 36px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+.noButton {
+    background-color: #D9D9D9;
+    color: black;
+}
+
+.yesButton {
+    background-color: #2ED020;
+    color: white;
+}
+
+.inputMark {
+    height: 40px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-top: 10px;
+    align-items: center;
+    text-align: center;
+}
+
+.doneButton {
+    height: 40px;
+    padding: 0 20px;
+    background-color: #2ED020;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 150px;
+}
+
+.checkbox {
+    margin-right: 8px;
+    transform: scale(1.2);
+    cursor: not-allowed;
+    pointer-events: none;
+}
